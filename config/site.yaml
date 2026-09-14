@@ -51,11 +51,11 @@ i18n:
   locales:
     - code: zh
       label: 中文
-    - code: en
-      label: English
-      # enabled: false  # 内容存在但暂时禁用（保留内容但不生成路由）
-    - code: ja
-      label: 日本語
+    # - code: en
+    #   label: English
+    #   # enabled: false  # 内容存在但暂时禁用（保留内容但不生成路由）
+    # - code: ja
+    #   label: 日本語
 
 # =============================================================================
 # Category Map
@@ -64,10 +64,10 @@ i18n:
 # =============================================================================
 categoryMap:
   # Primary categories
-  随笔: life
-  笔记: note
-  工具: tools
-  周刊: weekly
+  日常: life
+  技术: tech
+  数学: math
+  ACGN: acgn
   # Secondary categories (for nested paths)
   前端: front-end
   # Add more as needed:
@@ -88,21 +88,25 @@ categoryMap:
 # -----------------------------------------------------------------------------
 featuredCategories:
   - link: life # 对应 categoryMap 中 随笔: life
-    label: 随笔
+    label: 日常
     image: /img/cover/2.webp
     description: 生活记录、随想随笔
-  - link: note # 对应 categoryMap 中 笔记: note
-    label: 笔记
+  - link: tech # 对应 categoryMap 中 技术: tech
+    label: 技术
     image: /img/cover/4.webp
     description: 技术笔记、学习笔记
   - link: note/front-end # 嵌套分类：笔记/前端
     label: 前端
     image: /img/cover/1.webp
     description: 前端技术相关
-  - link: tools # 对应 categoryMap 中 工具: tools
-    label: 工具
+  - link: math # 对应 categoryMap 中 数学: math
+    label: 数学
     image: /img/cover/11.webp
-    description: 工具使用、效率提升
+    description: 数学笔记、学习笔记
+  - link: acgn # 对应 categoryMap 中 ACGN: acgn
+    label: ACGN
+    image: /img/cover/12.webp
+    description: ACGN笔记、学习笔记
 
 # =============================================================================
 # Featured Series
